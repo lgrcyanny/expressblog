@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  //- All Content after block content should be indent, or nothing will display
+  h1= title
+  form(method = "post")
+    div
+      div
+        span Title:
+        input(type= "text", name="title", id="editArticleTitle")
+      div
+        span Content:
+        textarea(name="body", rows="20", id="editArticleBody")
+      div#editArticleSubmit
+        input(type="submit", value="submit")
